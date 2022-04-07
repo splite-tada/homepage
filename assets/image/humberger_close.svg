@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="406.951" height="406.951" viewBox="0 0 406.951 406.951">
+  <g id="グループ_76" data-name="グループ 76" transform="translate(-683.576 -646.481)">
+    <g id="グループ_68" data-name="グループ 68" transform="translate(888.819 777.005) rotate(45)">
+      <g id="長方形_20" data-name="長方形 20" transform="translate(7.948) rotate(45)" fill="none" stroke="#6ab0ef" stroke-width="4">
+        <rect width="131.13" height="11.24" stroke="none"/>
+        <rect x="2" y="2" width="127.13" height="7.24" fill="none"/>
+      </g>
+      <g id="長方形_20-2" data-name="長方形 20" transform="translate(44.519 47.212)" fill="none" stroke="#6ab0ef" stroke-width="4">
+        <rect width="12.695" height="11.24" stroke="none"/>
+        <rect x="2" y="2" width="8.695" height="7.24" fill="none"/>
+      </g>
+      <g id="長方形_20-3" data-name="長方形 20" transform="translate(0 97.716) rotate(-45)" fill="none" stroke="#6ab0ef" stroke-width="4">
+        <rect width="131.13" height="11.24" stroke="none"/>
+        <rect x="2" y="2" width="127.13" height="7.24" fill="none"/>
+      </g>
+    </g>
+    <g id="長方形_40" data-name="長方形 40" transform="translate(887.051 646.481) rotate(45)" fill="none" stroke="#6ab0ef" stroke-width="4">
+      <rect width="287.758" height="287.758" stroke="none"/>
+      <rect x="2" y="2" width="283.758" height="283.758" fill="none"/>
+    </g>
+  </g>
+</svg>
