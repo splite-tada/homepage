@@ -7,11 +7,10 @@ export default class Header extends Component {
     const menus = [
       // {name: 'Blog', link: '#blog'},
       {name: 'Mission', link: 'mission'},
-      {name: 'Service', link: 'service'},
-      {name: 'About', link: 'about'},
+      {name: 'Introduce', link: 'introduce'},
       {name: 'Skills', link: 'skills'},
-      {name: 'Profile', link: 'profile'},
-      {name: 'Contact', link: 'contact'}
+      {name: 'Works', link: 'works'},
+      {name: 'Histories', link: 'histories'},
     ]
 
     const showMenu = function () {
@@ -20,7 +19,7 @@ export default class Header extends Component {
 
     return (
       <>
-        <nav className="border-gray-200 dark:bg-gray-900">
+        <nav className="border-gray-200 dark:bg-gray-900 fixed z-50 w-full">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Splite</span>
@@ -44,38 +43,40 @@ export default class Header extends Component {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>
             </button>
-            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div className="hidden w-full md:block md:w-auto max-sm:bg-white" id="navbar-default">
               <ul
                 className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <a
                     href="https://blog.splite.biz"
                     target="_blank"
-                    className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-[#316FA5] md:p-0 dark:text-white md:dark:hover:text-[#316FA5] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Blog
                   </a>
                 </li>
-                {menus.map((menu) => {
-                  return (
-                    <>
-                      <li>
-                        <Link
-                          className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                          activeClass="active"
-                          key={menu.name}
-                          to={menu.link}
-                          spy={true}
-                          smooth={true}
-                          offset={50}
-                          duration={500}
-                        >
-                          {menu.name}
-                        </Link>
-                      </li>
-                    </>
-                  )
-                })}
+                {
+                  menus.map((menu) => {
+                    return (
+                      <>
+                        <li>
+                          <Link
+                            className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-[#316FA5] md:p-0 dark:text-white md:dark:hover:text-[#316FA5] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            activeClass="active"
+                            key={menu.name}
+                            to={menu.link}
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={500}
+                          >
+                            {menu.name}
+                          </Link>
+                        </li>
+                      </>
+                    )
+                  })
+                }
                 <li className="h-6">
                   <a href="https://github.com/splite-tada" target="_blank"><img className="h-6" src={imgGithub}/></a>
                 </li>
