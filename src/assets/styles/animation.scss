@@ -1,0 +1,52 @@
+@use "colors";
+
+@keyframes bound-anim {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes wave {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes bubble-move {
+  from{
+    transform:none;
+    display: block;
+  }
+  to{
+    transform: translateY(-80vh);
+    width: 140px;
+    height: 140px;
+    background-color: colors.$color2;
+    opacity: 0.05;
+  }
+}
+
+@keyframes wave-anime {
+  0% {
+    transform: rotate(0);
+    left: 0;
+    border-radius: 50% 50% / 50% 70%;
+  }
+  50% {
+    transform: rotate(360deg);
+    left: -20%;
+    //border-radius: 60% 60% / 60% 90%;
+      width: 180%;
+  }
+  100% {
+    transform: rotate(0);
+    left: 0;
+    border-radius: 50% 50% / 50% 70%;
+  }
+}

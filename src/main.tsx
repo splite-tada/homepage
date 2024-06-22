@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from '@/Pages/App.tsx'
+import App from '@/pages/App.tsx'
 import '@/assets/styles/reset.css'
 import '@/assets/styles/index.scss'
 
