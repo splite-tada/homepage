@@ -1,0 +1,36 @@
+$color1: #FFFFF4;
+$color2: #316FA5;
+$color3: #FFFFFF;
+$color4: #E8E8E8;
+$color5: #9E9EA2;
+$color6: #00000029;
+$color7: #C7C7C7;
+$color8: #D3CCCC;
+$color9: #04EFF7;
+$color10: #05F0F8;
+$color11: #6AB0EF;
+$wave1-color: #80A2C4;
+$wave2-color: #90B0CC;
+
+.bg-color-wave1 {
+  background-color: $wave1-color;
+}
+
+
+.bg-color-wave2 {
+  background-color: $wave2-color;
+}
+
+.text-color2 {
+  color: $color2
+}
+
+.text-color7 {
+  color: $color7
+}
+
+@media screen and (max-width: 684px) {
+  .max-sm\:bg-color-wave1 {
+    background-color: $wave1-color;
+  }
+}

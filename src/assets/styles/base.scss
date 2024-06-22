@@ -1,0 +1,16 @@
+@use "colors";
+
+body {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  background: colors.$color1 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+nav {
+  width: 100%;
+  top: 0;
+}
+
