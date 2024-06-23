@@ -11,12 +11,15 @@ export default class FirstView extends Component {
       <div className='h-screen w-screen'>
         <img className='max-sm:hidden' src={imgWave1}/>
         <img className='absolute top-0 opacity-50 max-sm:hidden' src={imgWave2}/>
-        <img className='absolute w-52 bottom-36 right-36 max-sm:bottom-32 max-sm:right-4' src={logo}/>
+        <img className='hidden md:block absolute md:w-52 md:bottom-36 md:right-36 max-sm:bottom-32 max-sm:right-4' src={logo}/>
         <div className='text-center w-full mt-20 mx-auto opacity-50 text-8xl max-sm:text-5xl max-sm:mt-40'>
           Hi !!!
         </div>
-        <div className='text-center w-full mt-20 mx-auto opacity-50 text-8xl max-sm:text-5xl max-sm:mt-10'>
-          <span className='text-[#316FA5]'>I am</span> WEB Engineer
+        <div className='text-center w-full mt-20 mx-auto text-8xl max-sm:text-5xl max-sm:mt-10'>
+          <span className='opacity-50'>
+            <span className='text-[#316FA5]'>I am</span> WEB Engineer
+          </span>
+          <img className='ml-4 mt-6 w-32 md:w-52 inline-block md:hidden' src={logo}/>
         </div>
         <div className='text-center w-72 mt-20 mx-auto opacity-80 text-2xl max-sm:mt-10'>
           <span className='text-color2'>y.tada@splite.biz</span>

@@ -63,7 +63,7 @@ export default function App() {
           <div>
             <div id='histories' className="text-6xl w-11/12 md:w-4/5 mx-auto text-color2">Histories</div>
             <div className="my-6 px-4 md:px-48 py-12">
-              <ol className="relative border-s border-gray-200 dark:border-gray-700 left-4">
+              <ol className="relative border-s border-gray-200 left-4">
                 {
                   [
                     {
@@ -87,20 +87,20 @@ export default function App() {
                       <>
                         <li className="mb-10 ms-6">
                           <span
-                            className="absolute flex items-center justify-center w-6 h-6 bg-black rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900 translate-y-0.5"
+                            className="absolute flex items-center justify-center w-6 h-6 bg-black rounded-full -start-3 ring-8 ring-white translate-y-0.5"
                           >
                           </span>
                           <h3
-                            className="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-white"
+                            className="flex items-center mb-1 text-xl font-semibold text-gray-900"
                           >
                             {history.summary}
                           </h3>
                           <div
-                            className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                            className="block mb-2 text-sm font-normal leading-none text-gray-400"
                           >
                             {history.date}
                           </div>
-                          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                          <p className="mb-4 text-base font-normal text-gray-500">
                             {history.description}
                           </p>
                         </li>
