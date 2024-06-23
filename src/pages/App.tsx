@@ -14,7 +14,7 @@ export default function App() {
 
         <FirstView/>
 
-        <div id='mission' className="mt-48 min-h-[1220px] h-screen">
+        <div id='mission' className="mt-1 md:mt-48 min-h-[1220px] h-screen">
           <div className='bg-[#316FA5] text-[#FFFFF4] pt-6 text-center md:h-screen mb-6 py-12'>
             <div className='h-1/3'>
               <div  className="text-6xl w-11/12 md:w-4/5 mx-auto border-b-2 border-solid py-4">Mission</div>
